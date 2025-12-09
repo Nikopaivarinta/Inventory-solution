@@ -60,26 +60,26 @@ function seedDatabase() {
     
     if (row.count === 0) {
       const products = [
-        { name: 'Wireless Mouse', description: 'Ergonomic wireless mouse with 2.4GHz connection', category: 'Electronics', quantity: 45, price: 29.99, image: '🖱️' },
-        { name: 'Mechanical Keyboard', description: 'RGB mechanical gaming keyboard', category: 'Electronics', quantity: 23, price: 89.99, image: '⌨️' },
-        { name: 'USB-C Hub', description: '7-in-1 USB-C hub with HDMI and card reader', category: 'Electronics', quantity: 67, price: 45.50, image: '🔌' },
-        { name: 'Laptop Stand', description: 'Aluminum adjustable laptop stand', category: 'Accessories', quantity: 34, price: 39.99, image: '💻' },
-        { name: 'Webcam HD', description: '1080p webcam with built-in microphone', category: 'Electronics', quantity: 12, price: 79.99, image: '📷' },
-        { name: 'Phone Case', description: 'Shockproof protective phone case', category: 'Accessories', quantity: 156, price: 15.99, image: '📱' },
-        { name: 'Screen Protector', description: 'Tempered glass screen protector', category: 'Accessories', quantity: 89, price: 9.99, image: '🛡️' },
-        { name: 'Wireless Charger', description: 'Fast wireless charging pad', category: 'Electronics', quantity: 41, price: 25.99, image: '🔋' },
-        { name: 'Bluetooth Speaker', description: 'Portable waterproof Bluetooth speaker', category: 'Electronics', quantity: 28, price: 59.99, image: '🔊' },
-        { name: 'Headphones', description: 'Noise-canceling over-ear headphones', category: 'Electronics', quantity: 19, price: 149.99, image: '🎧' },
-        { name: 'Monitor 24"', description: '24-inch Full HD IPS monitor', category: 'Electronics', quantity: 15, price: 199.99, image: '🖥️' },
-        { name: 'Office Chair', description: 'Ergonomic mesh office chair', category: 'Furniture', quantity: 8, price: 299.99, image: '🪑' },
-        { name: 'Desk Lamp', description: 'LED desk lamp with adjustable brightness', category: 'Furniture', quantity: 52, price: 34.99, image: '💡' },
-        { name: 'Cable Organizer', description: 'Desktop cable management box', category: 'Accessories', quantity: 73, price: 12.99, image: '📦' },
-        { name: 'Mouse Pad', description: 'Extended gaming mouse pad', category: 'Accessories', quantity: 94, price: 19.99, image: '🎯' },
-        { name: 'External SSD 1TB', description: 'Portable solid-state drive 1TB', category: 'Electronics', quantity: 31, price: 119.99, image: '💾' },
-        { name: 'Power Bank', description: '20000mAh portable power bank', category: 'Electronics', quantity: 48, price: 39.99, image: '🔌' },
-        { name: 'HDMI Cable', description: '6ft HDMI 2.1 cable 4K support', category: 'Accessories', quantity: 127, price: 14.99, image: '🔗' },
-        { name: 'Microphone', description: 'USB condenser microphone for streaming', category: 'Electronics', quantity: 22, price: 89.99, image: '🎤' },
-        { name: 'Desk Organizer', description: 'Bamboo desk organizer with compartments', category: 'Furniture', quantity: 36, price: 24.99, image: '📐' }
+        { name: 'TaylorMade Driver', description: 'High-performance titanium driver with adjustable loft', category: 'Clubs', quantity: 15, price: 499.99, image: '⛳' },
+        { name: 'Callaway Iron Set', description: 'Premium forged iron set (4-PW)', category: 'Clubs', quantity: 8, price: 899.99, image: '🏌️' },
+        { name: 'Titleist Pro V1', description: 'Professional tour golf balls (1 dozen)', category: 'Balls', quantity: 125, price: 54.99, image: '⚪' },
+        { name: 'Odyssey Putter', description: 'Blade putter with alignment technology', category: 'Clubs', quantity: 22, price: 279.99, image: '🏑' },
+        { name: 'Hybrid Club 3H', description: 'Versatile hybrid club for long shots', category: 'Clubs', quantity: 18, price: 189.99, image: '🏌️' },
+        { name: 'Golf Glove', description: 'Premium leather golf glove - left hand', category: 'Apparel', quantity: 67, price: 24.99, image: '🧤' },
+        { name: 'Golf Shoes', description: 'Waterproof spiked golf shoes', category: 'Apparel', quantity: 34, price: 159.99, image: '👟' },
+        { name: 'Golf Polo Shirt', description: 'Moisture-wicking performance polo', category: 'Apparel', quantity: 89, price: 69.99, image: '👕' },
+        { name: 'Golf Balls - Distance', description: 'Long distance golf balls (1 dozen)', category: 'Balls', quantity: 156, price: 29.99, image: '⚪' },
+        { name: 'Stand Bag', description: 'Lightweight stand bag with 6 pockets', category: 'Bags', quantity: 12, price: 189.99, image: '🎒' },
+        { name: 'Cart Bag', description: 'Full-size cart bag with 14-way divider', category: 'Bags', quantity: 9, price: 249.99, image: '🎒' },
+        { name: 'Range Finder', description: 'Laser rangefinder with slope technology', category: 'Accessories', quantity: 28, price: 299.99, image: '📡' },
+        { name: 'Golf Tees', description: 'Wooden tees pack of 100', category: 'Accessories', quantity: 234, price: 9.99, image: '📌' },
+        { name: 'Ball Markers', description: 'Magnetic ball markers set of 3', category: 'Accessories', quantity: 145, price: 12.99, image: '🔘' },
+        { name: 'Golf Umbrella', description: '62" wind-resistant golf umbrella', category: 'Accessories', quantity: 41, price: 39.99, image: '☂️' },
+        { name: 'Golf Towel', description: 'Microfiber golf towel with clip', category: 'Accessories', quantity: 73, price: 19.99, image: '🧺' },
+        { name: 'Practice Net', description: 'Portable golf practice net with target', category: 'Accessories', quantity: 15, price: 129.99, image: '🥅' },
+        { name: 'Wedge Set', description: 'Gap, sand, and lob wedge set', category: 'Clubs', quantity: 11, price: 349.99, image: '🏌️' },
+        { name: 'Golf Cap', description: 'Adjustable performance golf cap', category: 'Apparel', quantity: 92, price: 29.99, image: '🧢' },
+        { name: 'Divot Tool', description: 'Stainless steel divot repair tool', category: 'Accessories', quantity: 187, price: 14.99, image: '🔧' }
       ];
 
       const stmt = db.prepare('INSERT INTO products (name, description, category, quantity, price, image) VALUES (?, ?, ?, ?, ?, ?)');

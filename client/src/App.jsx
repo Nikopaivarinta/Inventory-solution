@@ -12,10 +12,10 @@ function App() {
   const [newProduct, setNewProduct] = useState({
     name: '',
     description: '',
-    category: 'Electronics',
+    category: 'Clubs',
     quantity: 0,
     price: 0,
-    image: '📦'
+    image: '⛳'
   });
 
   // Fetch products
@@ -68,10 +68,10 @@ function App() {
       setNewProduct({
         name: '',
         description: '',
-        category: 'Electronics',
+        category: 'Clubs',
         quantity: 0,
         price: 0,
-        image: '📦'
+        image: '⛳'
       });
     } catch (err) {
       setError(err.message);
@@ -111,13 +111,13 @@ function App() {
   const totalValue = products.reduce((sum, p) => sum + (p.price * p.quantity), 0);
   const totalItems = products.reduce((sum, p) => sum + p.quantity, 0);
 
-  if (loading) return <div className="loading">Loading inventory... 📦</div>;
+  if (loading) return <div className="loading">Loading golf equipment... ⛳</div>;
 
   return (
     <div className="app">
       <header className="app-header">
-        <h1>📦 Inventory Management System</h1>
-        <p>Manage your products efficiently</p>
+        <h1>⛳ Golf Equipment Inventory</h1>
+        <p>Manage your golf shop inventory efficiently</p>
       </header>
 
       {error && (
@@ -231,10 +231,11 @@ function App() {
                   value={newProduct.category}
                   onChange={(e) => setNewProduct({ ...newProduct, category: e.target.value })}
                 >
-                  <option value="Electronics">Electronics</option>
+                  <option value="Clubs">Clubs</option>
+                  <option value="Balls">Balls</option>
+                  <option value="Apparel">Apparel</option>
                   <option value="Accessories">Accessories</option>
-                  <option value="Furniture">Furniture</option>
-                  <option value="General">General</option>
+                  <option value="Bags">Bags</option>
                 </select>
               </div>
               <div className="form-group">
