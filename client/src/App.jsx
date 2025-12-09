@@ -244,7 +244,7 @@ function App() {
                   required
                   min="0"
                   value={newProduct.quantity}
-                  onChange={(e) => setNewProduct({ ...newProduct, quantity: parseInt(e.target.value) })}
+                  onChange={(e) => setNewProduct({ ...newProduct, quantity: parseInt(e.target.value, 10) || 0 })}
                 />
               </div>
               <div className="form-group">
@@ -255,7 +255,7 @@ function App() {
                   min="0"
                   step="0.01"
                   value={newProduct.price}
-                  onChange={(e) => setNewProduct({ ...newProduct, price: parseFloat(e.target.value) })}
+                  onChange={(e) => setNewProduct({ ...newProduct, price: parseFloat(e.target.value) || 0 })}
                 />
               </div>
               <div className="form-group">
