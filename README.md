@@ -1,17 +1,17 @@
-# Inventory Management System
+# Golf Equipment Inventory System
 Retail App by SW Finland X MSFT
 
-A modern web application for managing inventory with a clean and intuitive interface.
+A modern web application for managing golf equipment inventory with a clean and intuitive interface.
 
 ## Features
 
-- 📦 Browse products with search and category filters
-- ➕ Add new products with detailed information
+- 📦 Browse golf equipment with search and category filters
+- ➕ Add new golf products with detailed information
 - 🗑️ Delete products from inventory
 - 📊 Update product quantities with easy increment/decrement controls
 - 💰 Track total inventory value and item counts
 - 🎨 Modern, responsive UI that works on all devices
-- 💾 Local SQLite database pre-populated with 20 sample products
+- 💾 Local SQLite database pre-populated with 20 golf equipment products
 
 ## Tech Stack
 
@@ -113,10 +113,12 @@ products (
 
 ## Sample Data
 
-The database is automatically seeded with 20 sample products across different categories:
-- Electronics (laptops, phones, accessories)
-- Furniture (chairs, desks, lamps)
-- Accessories (cables, cases, organizers)
+The database is automatically seeded with 20 golf equipment products across different categories:
+- Clubs (drivers, irons, putters, hybrids, wedges)
+- Balls (Pro V1, distance balls)
+- Apparel (gloves, shoes, polo shirts, caps)
+- Accessories (range finders, tees, ball markers, umbrellas, towels, divot tools, practice nets)
+- Bags (stand bags, cart bags)
 
 ## License
 
